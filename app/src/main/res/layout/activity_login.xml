@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp" />
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_below="@id/usernameEditText"
+        android:layout_centerHorizontal="true" />
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true" />
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <!-- Create New Account Button -->
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Create new account"
+        android:layout_below="@id/forgotPasswordTextView"
+        android:layout_centerHorizontal="true" />
+    <!-- Social Login Icons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/createAccountButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            android:layout_marginEnd="10dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/google" />
+    </LinearLayout>
+</RelativeLayout>
